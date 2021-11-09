@@ -20,7 +20,11 @@ export default function Home({ blogs }) {
           {blogs.map((blog) => {
             return (
               <>
-                <a className={styles.card}>
+                <a
+                  className={styles.card}
+                  href={blog.node.link}
+                  target="_blank"
+                >
                   <h2>{blog.node.title}</h2>
                   <p>{blog.node.excerpt}</p>
                 </a>
