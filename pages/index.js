@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 export default function Home({ launches }) {
-  console.log('Launches', launches);
+  // console.log('Launches', launches);
   return (
     <div className={styles.container}>
       <Head>
@@ -17,10 +16,6 @@ export default function Home({ launches }) {
         <h1 className={styles.title}>
           Welcome to <a href="https://mufaqar.com">The Spacex App</a>
         </h1>
-
-        <p className={styles.description}>
-          Created By <code className={styles.code}>Mufaqar</code>
-        </p>
 
         <div className={styles.grid}>
           {launches.map((launch) => {
