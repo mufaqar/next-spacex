@@ -14,7 +14,7 @@ export default function Home({ launches }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://mufaqar.com">The Spacex App</a>
+          Welcome to <a href="#">The Spacex App</a>
         </h1>
 
         <div className={styles.grid}>
